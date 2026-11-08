@@ -14,6 +14,8 @@ function App() {
   return (
     <>
     <Header/>
+    // Learning Git and GitHub collaboration
+    // Practising Git push workflow for the second time
     <Routes>
       <Route path='' element={<Home/>}/>
       <Route path='wishlist' element={<Wishlist/>}/>
