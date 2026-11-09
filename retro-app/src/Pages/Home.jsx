@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <>
-      Home
+      <h1>Welcome to Retro App!</h1>
     </>
   )
 }
