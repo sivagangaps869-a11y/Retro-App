@@ -10,6 +10,8 @@ function Home() {
       </div>
 
       <h1>Welcome to Retro App!</h1>
+
+      <p>Landing Page</p>
  
     </>
   )
