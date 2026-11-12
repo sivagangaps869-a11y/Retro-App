@@ -7,7 +7,104 @@
       "id": 1
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "productName": "",
+      "description": "",
+      "price": "",
+      "category": "",
+      "size": "",
+      "condition": "",
+      "material": "",
+      "originalPrice": "",
+      "images": [],
+      "id": 1
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493111/qy6dlaaqznit3cenjr7e.jpg"
+      ],
+      "id": 2
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493112/ifoxjwbigitgljxxxa0b.jpg"
+      ],
+      "id": 3
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/ylcwxxul5omwmhyohvtk.jpg"
+      ],
+      "id": 4
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/vvz0si2eripgpsgcwlei.jpg"
+      ],
+      "id": 5
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/pu2ntitydfab1g7jcodu.jpg"
+      ],
+      "id": 6
+    },
+    {
+      "productName": "Shirt",
+      "description": "Nil",
+      "price": "400",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Excellent",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493178/zvuotqc6ngu0kqtvvcpv.jpg"
+      ],
+      "id": 7
+    }
+  ],
   "wishlist": [],
   "cart": []
 }
