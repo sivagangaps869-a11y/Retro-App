@@ -1,6 +1,13 @@
 {
-    "login users":[],
-    "products":[],
-    "wishlist":[],
-    "cart":[]
+  "login_users": [
+    {
+      "name": "siva",
+      "email": "siva@gmail.com",
+      "password": "741",
+      "id": 1
+    }
+  ],
+  "products": [],
+  "wishlist": [],
+  "cart": []
 }

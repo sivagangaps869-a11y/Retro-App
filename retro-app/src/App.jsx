@@ -8,6 +8,8 @@ import Wishlist from './Pages/Wishlist'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import AddProduct from './Pages/AddProduct'
+import Login from './Pages/Login'
+import Register from './Pages/Register'
 
 function App() {
   
@@ -17,6 +19,8 @@ function App() {
     <Header/>
     <Routes>
       <Route path='' element={<Home/>}/>
+      <Route path='login' element={<Login/>}/>
+      <Route path='register' element={<Register/>}/>
       <Route path='wishlist' element={<Wishlist/>}/>
       <Route path='cart' element={<Cart/>}/>
       <Route path='view/:id' element={<View/>}/>
