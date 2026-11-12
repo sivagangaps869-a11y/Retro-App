@@ -16,7 +16,7 @@ axiosinstance.interceptors.response.use(
     },
     (error)=>{
         if(error.response){
-            const status = error.reponse.status
+            const status = error.response.status
             if(status==401){
                 console.log("Unauthorised Access - Redirect to login page");
                 

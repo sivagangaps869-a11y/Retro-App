@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
+import { uploadImageAPI } from '../Services/cloudinaryAPI'
+import { addProductAPI } from '../Services/allAPI'
+import { useDispatch } from 'react-redux'
+import { addProduct } from '../Redux/Slice/productSlice'
 
 function AddProduct() {
 const [images, setImages] = useState([])
+const dispatch = useDispatch()
 
 const handleImageChange = (e) => {
   const selectedFiles = Array.from(e.target.files)
@@ -25,6 +30,44 @@ const removeImage = (index) => {
   setImages(prev => prev.filter((_, i) => i !== index))
 }
 
+
+const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  const imageUrls = []
+
+  // Upload images to Cloudinary
+  for (const image of images) {
+    const url = await uploadImageAPI(image.file)
+    imageUrls.push(url)
+  }
+
+  const productData = {
+    productName: e.target.pname.value,
+    description: e.target.pdesc.value,
+    price: e.target.price.value,
+    category: e.target.category.value,
+    size: e.target.size.value,
+    condition: e.target.condition.value,
+    material: e.target.material.value,
+    originalPrice: e.target.ogPrice.value,
+    images: imageUrls
+  }
+
+  // console.log(productData)
+  try {
+  const response = await addProductAPI(productData)
+
+  dispatch(addProduct(response.data))
+
+  alert("Product added successfully!")
+
+} catch (error) {
+  console.log(error)
+  alert("Failed to add product. Please try again.")
+}
+}
+
   return (
     <div className="container py-5">
 
@@ -42,7 +85,7 @@ const removeImage = (index) => {
 
           <h5 className="fw-bold mb-4">Product Information</h5>
 
-          <form>
+          <form onSubmit={handleSubmit}>
 
             {/* Product Name */}
             <div className="mb-3">
