@@ -10,6 +10,7 @@ import Footer from './Components/Footer'
 import AddProduct from './Pages/AddProduct'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
+import Myprofile from './Pages/Myprofile'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
       <Route path='cart' element={<Cart/>}/>
       <Route path='view/:id' element={<View/>}/>
       <Route path='/addproducts' element={<AddProduct/>}/>
+      <Route path='myprofile' element={<Myprofile/>}/>
     </Routes>
     <Footer/>
     </>

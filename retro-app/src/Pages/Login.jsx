@@ -25,7 +25,7 @@ function Login() {
             .unwrap()
             .then(() => {
                 
-                navigate('/profile');
+                navigate('/myprofile');
             })
             .catch(() => {});
     };
