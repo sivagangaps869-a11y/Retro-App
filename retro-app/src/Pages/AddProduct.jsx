@@ -60,11 +60,13 @@ const handleSubmit = async (e) => {
       images: imageUrls
     }
 
-    const response = await addProductAPI(productData)
+const response = await addProductAPI(productData)
+dispatch(addProduct(response.data))
 
-    dispatch(addProduct(response.data))
+e.target.reset()
+setImages([])
 
-    alert("Product added successfully!")
+alert("Product added successfully!")
 
   } catch (error) {
     console.log(error)
