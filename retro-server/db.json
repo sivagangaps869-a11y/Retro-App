@@ -23,20 +23,6 @@
       "id": "2"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
-      "price": "400",
-      "category": "mens-clothing",
-      "size": "L",
-      "condition": "Excellent",
-      "material": "cotton",
-      "originalPrice": "600",
-      "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/pu2ntitydfab1g7jcodu.jpg"
-      ],
-      "id": "6"
-    },
-    {
       "productName": "Tottenham 25-26",
       "description": "Official jersey of Tottenham 2025-26 season",
       "price": "500",
