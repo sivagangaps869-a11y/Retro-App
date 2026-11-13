@@ -118,7 +118,7 @@ function Home() {
 {/* Shop by Category  */}
 
 <section
-  className="container-fluid py-5"
+  className="container-fluid py-5 pb-5"
   style={{ backgroundColor: '#f8edd8' }}
 >
   <div className="container">
