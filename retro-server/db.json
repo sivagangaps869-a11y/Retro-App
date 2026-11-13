@@ -4,7 +4,7 @@
       "name": "siva",
       "email": "siva@gmail.com",
       "password": "741",
-      "id": 1
+      "id": "1"
     }
   ],
   "products": [
@@ -18,7 +18,7 @@
       "material": "",
       "originalPrice": "",
       "images": [],
-      "id": 1
+      "id": "1"
     },
     {
       "productName": "Shirt",
@@ -32,7 +32,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493111/qy6dlaaqznit3cenjr7e.jpg"
       ],
-      "id": 2
+      "id": "2"
     },
     {
       "productName": "Shirt",
@@ -46,7 +46,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493112/ifoxjwbigitgljxxxa0b.jpg"
       ],
-      "id": 3
+      "id": "3"
     },
     {
       "productName": "Shirt",
@@ -60,7 +60,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/ylcwxxul5omwmhyohvtk.jpg"
       ],
-      "id": 4
+      "id": "4"
     },
     {
       "productName": "Shirt",
@@ -74,7 +74,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/vvz0si2eripgpsgcwlei.jpg"
       ],
-      "id": 5
+      "id": "5"
     },
     {
       "productName": "Shirt",
@@ -88,7 +88,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/pu2ntitydfab1g7jcodu.jpg"
       ],
-      "id": 6
+      "id": "6"
     },
     {
       "productName": "Shirt",
@@ -102,9 +102,25 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493178/zvuotqc6ngu0kqtvvcpv.jpg"
       ],
-      "id": 7
+      "id": "7"
+    },
+    {
+      "productName": "Tottenham 25-26",
+      "description": "Official jersey of Tottenham 2025-26 season",
+      "price": "500",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "Good",
+      "material": "cotton",
+      "originalPrice": "750",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794547278/gef3sijmqcfh74we3wrp.webp",
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794547280/zbfiwfdoonbh7hbjvx9t.jpg"
+      ],
+      "id": "0gZc5VU7DjY"
     }
   ],
   "wishlist": [],
-  "cart": []
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
