@@ -5,9 +5,43 @@
       "email": "siva@gmail.com",
       "password": "741",
       "id": "1"
+    },
+    {
+      "name": "sreya",
+      "email": "sreya@2005",
+      "password": "2525",
+      "id": "IToH97H751Q",
+      "phone": "9234578955",
+      "address": "kochi"
+    },
+    {
+      "name": "Abhi",
+      "email": "abhi@gmail.com",
+      "password": "245245",
+      "id": "s-9PI2Sxnmo"
+    },
+    {
+      "name": "abhi",
+      "email": "abhi1@gmail.com",
+      "password": "2323",
+      "id": "O7t2zHGMMAk",
+      "phone": "9234578955",
+      "address": "kochi"
     }
   ],
   "products": [
+    {
+      "productName": "",
+      "description": "",
+      "price": "",
+      "category": "",
+      "size": "",
+      "condition": "",
+      "material": "",
+      "originalPrice": "",
+      "images": [],
+      "id": "1"
+    },
     {
       "productName": "Shirt",
       "description": "Nil",
@@ -63,6 +97,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575667/rclyy125ks8qqjannrii.jpg"
       ],
+      "id": "3"
       "id": "7HnBlrn0zaM"
     },
     {
@@ -77,6 +112,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575903/ix3rtemyvdn1a47emsqt.jpg"
       ],
+      "id": "4"
       "id": "0N4TUGbNf6Q"
     },
     {
@@ -105,6 +141,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576047/vfczlv5rfdnrcohgrsqi.jpg"
       ],
+      "id": "5"
       "id": "1I9HdRE4sWk"
     },
     {
@@ -119,6 +156,7 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576100/dzfguugkzxunqi2rv26s.jpg"
       ],
+      "id": "6"
       "id": "4PG4jBBQYqI"
     },
     {
@@ -189,10 +227,12 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576470/ot15mgapjc2odkype76s.jpg"
       ],
+      "id": "7"
       "id": "wm0cXBWAOck"
     }
   ],
   "wishlist": [],
   "cart": [],
   "$schema": "./node_modules/json-server/schema.json"
+}
 }

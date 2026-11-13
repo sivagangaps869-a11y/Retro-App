@@ -15,3 +15,9 @@ export const registerAPI = async (userDetails) => {
 export const getUsersAPI = async () => {
     return await axiosService('GET', '/login_users', {})
 }
+
+
+// Update user profile API
+export const updateProfileAPI = async (id, profileData) => {
+    return await axiosService('PATCH', `/login_users/${id}`, profileData)
+}
