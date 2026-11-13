@@ -57,77 +57,182 @@
       "id": "2"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
-      "price": "400",
+      "productName": "Tottenham 25-26",
+      "description": "Official jersey of Tottenham 2025-26 season",
+      "price": "500",
       "category": "mens-clothing",
       "size": "L",
+      "condition": "Good",
+      "material": "cotton",
+      "originalPrice": "750",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794547278/gef3sijmqcfh74we3wrp.webp",
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794547280/zbfiwfdoonbh7hbjvx9t.jpg"
+      ],
+      "id": "0gZc5VU7DjY"
+    },
+    {
+      "productName": "Saree",
+      "description": "Elegant and timeless saree featuring a beautiful design and graceful drape.",
+      "price": "2000",
+      "category": "traditional-wear",
+      "size": "Free Size",
+      "condition": "New",
+      "material": "silk",
+      "originalPrice": "2500",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794569247/djkyuil8ubizz74apgdg.jpg"
+      ],
+      "id": "MQWLbYMNc9U"
+    },
+    {
+      "productName": "Cream Saree",
+      "description": "Elegant Cotton Saree...",
+      "price": "1000",
+      "category": "womens-clothing",
+      "size": "Free Size",
       "condition": "Excellent",
       "material": "cotton",
-      "originalPrice": "600",
+      "originalPrice": "1200",
       "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493112/ifoxjwbigitgljxxxa0b.jpg"
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575667/rclyy125ks8qqjannrii.jpg"
       ],
       "id": "3"
+      "id": "7HnBlrn0zaM"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
-      "price": "400",
+      "productName": "Formal shirt",
+      "description": "Formal shirt for men",
+      "price": "850",
       "category": "mens-clothing",
       "size": "L",
       "condition": "Excellent",
       "material": "cotton",
-      "originalPrice": "600",
+      "originalPrice": "1200",
       "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/ylcwxxul5omwmhyohvtk.jpg"
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575903/ix3rtemyvdn1a47emsqt.jpg"
       ],
       "id": "4"
+      "id": "0N4TUGbNf6Q"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
+      "productName": "T-shirt",
+      "description": "Men's T-shirt",
       "price": "400",
+      "category": "mens-clothing",
+      "size": "M",
+      "condition": "Good",
+      "material": "other",
+      "originalPrice": "500",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575978/pcbfuo36klp15o8eiswk.jpg"
+      ],
+      "id": "L4xW38oC5DE"
+    },
+    {
+      "productName": "White shirt",
+      "description": "White full sleeve shirt for men",
+      "price": "750",
       "category": "mens-clothing",
       "size": "L",
       "condition": "Excellent",
       "material": "cotton",
-      "originalPrice": "600",
+      "originalPrice": "1000",
       "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/vvz0si2eripgpsgcwlei.jpg"
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576047/vfczlv5rfdnrcohgrsqi.jpg"
       ],
       "id": "5"
+      "id": "1I9HdRE4sWk"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
-      "price": "400",
+      "productName": "Printed shirt",
+      "description": "Black printed shirt for men",
+      "price": "650",
       "category": "mens-clothing",
       "size": "L",
-      "condition": "Excellent",
-      "material": "cotton",
-      "originalPrice": "600",
+      "condition": "Decent",
+      "material": "polyester",
+      "originalPrice": "750",
       "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493138/pu2ntitydfab1g7jcodu.jpg"
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576100/dzfguugkzxunqi2rv26s.jpg"
       ],
       "id": "6"
+      "id": "4PG4jBBQYqI"
     },
     {
-      "productName": "Shirt",
-      "description": "Nil",
-      "price": "400",
+      "productName": "Denim shirt",
+      "description": "Denim shirt for men",
+      "price": "600",
       "category": "mens-clothing",
+      "size": "XL",
+      "condition": "Excellent",
+      "material": "denim",
+      "originalPrice": "800",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576149/jx2q6o1asr2iwhuvxycu.jpg"
+      ],
+      "id": "8AlB6rX2GWM"
+    },
+    {
+      "productName": "Red saree",
+      "description": "Elegant Red saree for women",
+      "price": "1182",
+      "category": "womens-clothing",
+      "size": "Free Size",
+      "condition": "Good",
+      "material": "silk",
+      "originalPrice": "1500",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576196/uq0mng3qynbtnavl9w0j.jpg"
+      ],
+      "id": "tge90KSGpbs"
+    },
+    {
+      "productName": "Saree",
+      "description": "Embroidery saree ",
+      "price": "2000",
+      "category": "traditional-wear",
+      "size": "Free Size",
+      "condition": "Excellent",
+      "material": "silk",
+      "originalPrice": "3000",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576244/ktni03cc314xxs5woyzx.jpg"
+      ],
+      "id": "-QwPpTXk2OM"
+    },
+    {
+      "productName": "kurta",
+      "description": "Men's embroidered white kurta ",
+      "price": "3200",
+      "category": "traditional-wear",
+      "size": "XL",
+      "condition": "Excellent",
+      "material": "wool",
+      "originalPrice": "4000",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576386/tgxorl82rwf6tthnfvou.jpg"
+      ],
+      "id": "Nuc2oR8n_GY"
+    },
+    {
+      "productName": "Shirt and dhoti",
+      "description": "Kerala style Shirt and dhoti",
+      "price": "1200",
+      "category": "traditional-wear",
       "size": "L",
       "condition": "Excellent",
       "material": "cotton",
-      "originalPrice": "600",
+      "originalPrice": "1500",
       "images": [
-        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794493178/zvuotqc6ngu0kqtvvcpv.jpg"
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576470/ot15mgapjc2odkype76s.jpg"
       ],
       "id": "7"
+      "id": "wm0cXBWAOck"
     }
   ],
   "wishlist": [],
   "cart": [],
   "$schema": "./node_modules/json-server/schema.json"
+}
 }

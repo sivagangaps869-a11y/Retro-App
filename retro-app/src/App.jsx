@@ -11,6 +11,7 @@ import AddProduct from './Pages/AddProduct'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Myprofile from './Pages/Myprofile'
+import Allproducts from './Pages/Allproducts'
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
       <Route path='view/:id' element={<View/>}/>
       <Route path='/addproducts' element={<AddProduct/>}/>
       <Route path='myprofile' element={<Myprofile/>}/>
+      <Route path='/allproduct' element={<Allproducts/>}/>
     </Routes>
     <Footer/>
     </>

@@ -34,38 +34,44 @@ const removeImage = (index) => {
 const handleSubmit = async (e) => {
   e.preventDefault()
 
-  const imageUrls = []
-
-  // Upload images to Cloudinary
-  for (const image of images) {
-    const url = await uploadImageAPI(image.file)
-    imageUrls.push(url)
+  if (images.length === 0) {
+    alert("Please upload at least one product image.")
+    return
   }
 
-  const productData = {
-    productName: e.target.pname.value,
-    description: e.target.pdesc.value,
-    price: e.target.price.value,
-    category: e.target.category.value,
-    size: e.target.size.value,
-    condition: e.target.condition.value,
-    material: e.target.material.value,
-    originalPrice: e.target.ogPrice.value,
-    images: imageUrls
-  }
-
-  // console.log(productData)
   try {
-  const response = await addProductAPI(productData)
+    const imageUrls = []
 
-  dispatch(addProduct(response.data))
+    // Upload images to Cloudinary
+    for (const image of images) {
+      const url = await uploadImageAPI(image.file)
+      imageUrls.push(url)
+    }
 
-  alert("Product added successfully!")
+    const productData = {
+      productName: e.target.pname.value,
+      description: e.target.pdesc.value,
+      price: e.target.price.value,
+      category: e.target.category.value,
+      size: e.target.size.value,
+      condition: e.target.condition.value,
+      material: e.target.material.value,
+      originalPrice: e.target.ogPrice.value,
+      images: imageUrls
+    }
 
-} catch (error) {
-  console.log(error)
-  alert("Failed to add product. Please try again.")
-}
+const response = await addProductAPI(productData)
+dispatch(addProduct(response.data))
+
+e.target.reset()
+setImages([])
+
+alert("Product added successfully!")
+
+  } catch (error) {
+    console.log(error)
+    alert("Failed to add product. Please try again.")
+  }
 }
 
   return (
@@ -96,6 +102,7 @@ const handleSubmit = async (e) => {
                 type="text"
                 className="form-control"
                 placeholder="Enter product name"
+                required
               />
             </div>
 
@@ -108,6 +115,7 @@ const handleSubmit = async (e) => {
                 className="form-control"
                 rows="4"
                 placeholder="Describe your product..."
+                required
               ></textarea>
             </div>
 
@@ -122,6 +130,8 @@ const handleSubmit = async (e) => {
                   type="number"
                   className="form-control"
                   placeholder="Enter price"
+                  min="0"
+                  required
                 />
               </div>
 
@@ -129,7 +139,7 @@ const handleSubmit = async (e) => {
                 <label className="form-label fw-semibold">
                   Category
                 </label>
-               <select className="form-select" id='category'>
+               <select className="form-select" id='category' required>
   <option value="">Select category</option>
   <option value="mens-clothing">Men's Clothing</option>
   <option value="womens-clothing">Women's Clothing</option>
@@ -147,7 +157,7 @@ const handleSubmit = async (e) => {
   {/* Size */}
   <div className="col-md-6 mb-3">
     <label className="form-label fw-semibold">Size</label>
-    <select className="form-select" id='size'>
+    <select className="form-select" id='size' required>
       <option value="">Select size</option>
       <option>XS</option>
       <option>S</option>
@@ -162,7 +172,7 @@ const handleSubmit = async (e) => {
   {/* Condition */}
   <div className="col-md-6 mb-3">
     <label className="form-label fw-semibold">Condition</label>
-    <select className="form-select" id='condition'>
+    <select className="form-select" id='condition' required>
       <option value="">Select condition</option>
       <option>New</option>
       <option>Excellent</option>
@@ -179,7 +189,7 @@ const handleSubmit = async (e) => {
     Material
   </label>
 
-  <select className="form-select" id="material" name="material">
+  <select className="form-select" id="material" name="material" required>
     <option value="">Select material</option>
     <option value="cotton">Cotton</option>
     <option value="denim">Denim</option>
@@ -203,6 +213,7 @@ const handleSubmit = async (e) => {
     name="originalPrice"
     placeholder="Enter original price"
     min="0"
+    required
   />
 </div>
 </div>
