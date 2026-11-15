@@ -1,8 +1,8 @@
-
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProductsAPI } from '../Services/allAPI'
 import { setProducts } from '../Redux/Slice/productSlice'
+import { addToWishlist, removeFromWishlist } from '../Redux/Slice/wishlistSlice'
 
 function AllProducts() {
 
@@ -15,7 +15,12 @@ function AllProducts() {
     const [search, setSearch] = useState('')
     const [category, setCategory] = useState('all')
     const [sort, setSort] = useState('recommended')
-    const [wishlist, setWishlist] = useState([])
+    const wishlist = useSelector(
+  state => state.wishlistReducer.wishlist
+  
+)
+console.log("Current Wishlist:", wishlist)
+
     const [loading, setLoading] = useState(false)
 
     // Fetch all products
@@ -39,14 +44,11 @@ function AllProducts() {
         fetchProducts()
     }, [])
 
-    // Wishlist
-    const toggleWishlist = (id) => {
-        setWishlist(prev =>
-            prev.includes(id)
-                ? prev.filter(item => item !== id)
-                : [...prev, id]
-        )
-    }
+   
+
+   
+
+
 
     // Search and Category Filter
     let filteredProducts = products.filter(product => {
@@ -79,7 +81,7 @@ function AllProducts() {
                 <small className="text-secondary fw-semibold">
                     THE REWEAR COLLECTION
                 </small>
-                <h1 className="fw-bold mt-2">Explore </h1>
+                <h1 className="fw-bold mt-2">Explore <span className="text-secondary fst-italic">All Products</span></h1>
 
                 <p className="text-muted">
                     Find something you love. Wear it your way.
@@ -96,14 +98,25 @@ function AllProducts() {
                         <i className="bi bi-search"></i>
                     </span>
 
-                    <input type="text"className="form-control"placeholder="Search clothes, styles..."value={search}onChange={(e) => setSearch(e.target.value)}/>
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Search clothes, styles..."
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                    />
+
                 </div>
+
             </div>
 
             {/* Category Filter */}
             <div className="mb-4">
 
-                <h6 className="fw-bold mb-3">SHOP BY CATEGORY</h6>
+                <h6 className="fw-bold mb-3">
+                    SHOP BY CATEGORY
+                </h6>
+
                 <div className="d-flex flex-wrap gap-2">
 
                     {[
@@ -119,7 +132,7 @@ function AllProducts() {
 
                         <button
                             key={item.value}
-                            className={`btn btn-sm rounded-pill p-2 ${
+                            className={`btn btn-sm rounded-pill ${
                                 category === item.value
                                     ? 'btn-dark'
                                     : 'btn-outline-dark'
@@ -128,15 +141,20 @@ function AllProducts() {
                         >
                             {item.label}
                         </button>
+
                     ))}
+
                 </div>
+
             </div>
 
             {/* Products Heading and Sorting */}
             <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
 
                 <div>
-                    <h4 className="fw-bold mb-1">Discover More</h4>
+                    <h4 className="fw-bold mb-1">
+                        Curated for you
+                    </h4>
 
                     <small className="text-muted">
                         {filteredProducts.length} products available
@@ -148,6 +166,7 @@ function AllProducts() {
                     <option value="low">Price: Low to High</option>
                     <option value="high">Price: High to Low</option>
                 </select>
+
             </div>
 
             {/* Loading */}
@@ -171,10 +190,15 @@ function AllProducts() {
 
                                     {/* Wishlist Button */}
                                     <button
+                                       
                                         className="btn btn-light rounded-circle position-absolute top-0 end-0 m-2"
-                                        onClick={() => toggleWishlist(product.id)}
-                                    >
-                                        <i className={`bi ${wishlist.includes(product.id)? 'bi-heart-fill text-danger'
+  onClick={() => {
+    dispatch(addToWishlist(product))
+    alert("Product dispatched to wishlist")
+  }}
+                                    
+                                     >
+                                        <i className={`bi ${wishlist.some(item => item.id === product.id)? 'bi-heart-fill text-danger'
                                                 : 'bi-heart'
                                         }`}></i>
                                     </button>
@@ -188,7 +212,7 @@ function AllProducts() {
                                 <div className="card-body">
 
                                     <small className="text-secondary text-uppercase">
-                                        {product.category.replaceAll('-', ' ')}
+                                        {product.category?.replaceAll('-', ' ')}
                                     </small>
 
                                     <h6 className="fw-bold mt-2">{product.productName}</h6>
