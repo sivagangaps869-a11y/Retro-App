@@ -4,7 +4,9 @@
       "name": "siva",
       "email": "siva@gmail.com",
       "password": "741",
-      "id": "1"
+      "id": "1",
+      "phone": "",
+      "address": ""
     },
     {
       "name": "sreya",
@@ -97,7 +99,6 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575667/rclyy125ks8qqjannrii.jpg"
       ],
-      "id": "3"
       "id": "7HnBlrn0zaM"
     },
     {
@@ -112,7 +113,6 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794575903/ix3rtemyvdn1a47emsqt.jpg"
       ],
-      "id": "4"
       "id": "0N4TUGbNf6Q"
     },
     {
@@ -141,7 +141,6 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576047/vfczlv5rfdnrcohgrsqi.jpg"
       ],
-      "id": "5"
       "id": "1I9HdRE4sWk"
     },
     {
@@ -156,7 +155,6 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576100/dzfguugkzxunqi2rv26s.jpg"
       ],
-      "id": "6"
       "id": "4PG4jBBQYqI"
     },
     {
@@ -227,12 +225,10 @@
       "images": [
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576470/ot15mgapjc2odkype76s.jpg"
       ],
-      "id": "7"
       "id": "wm0cXBWAOck"
     }
   ],
   "wishlist": [],
-  "cart": [],
-  "$schema": "./node_modules/json-server/schema.json"
-}
+  "cart": []
+  
 }
