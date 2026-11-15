@@ -5,7 +5,7 @@ import { Button, Card, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeFromWishlist } from '../Redux/Slice/wishlistSlice'
-// import { addtoCart } from '../Redux/slice/cartSlice'
+ import { addToCart } from '../Redux/Slice/cartSlice'
 
 function Wishlist() {
 
@@ -13,10 +13,10 @@ function Wishlist() {
   console.log("Wishlist Page Data:", wishlist)
   const dispatch = useDispatch()
 
-  // const handleCart = (product) => {
-  //   dispatch(addtoCart(product))
-  //   dispatch(removeFromWishlist(product.id))
-  // }
+   const handleCart = (product) => {
+    dispatch(addToCart(product))
+    dispatch(removeFromWishlist(product.id))
+  }
 
   return (
     <div style={{ background: '#f5f6f5', minHeight: '100vh' }}>
@@ -62,14 +62,14 @@ function Wishlist() {
                   </div>
 
                   <h5 className="fw-bold">₹{product.price}</h5>
-{/* 
+
                   <Button
                     className="w-100 mt-2 border-0"
                     style={{ background: '#315c43' }}
                     onClick={() => handleCart(product)}>
                     <i className="fa-solid fa-cart-shopping me-2"></i>
                     Add to Cart
-                  </Button> */}
+                  </Button> 
 
                 </Card.Body>
               </Card>
