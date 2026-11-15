@@ -1,8 +1,8 @@
-
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProductsAPI } from '../Services/allAPI'
 import { setProducts } from '../Redux/Slice/productSlice'
+import { addToWishlist, removeFromWishlist } from '../Redux/Slice/wishlistSlice'
 
 function AllProducts() {
 
@@ -15,7 +15,12 @@ function AllProducts() {
     const [search, setSearch] = useState('')
     const [category, setCategory] = useState('all')
     const [sort, setSort] = useState('recommended')
-    const [wishlist, setWishlist] = useState([])
+    const wishlist = useSelector(
+  state => state.wishlistReducer.wishlist
+  
+)
+console.log("Current Wishlist:", wishlist)
+
     const [loading, setLoading] = useState(false)
 
     // Fetch all products
@@ -39,14 +44,11 @@ function AllProducts() {
         fetchProducts()
     }, [])
 
-    // Wishlist
-    const toggleWishlist = (id) => {
-        setWishlist(prev =>
-            prev.includes(id)
-                ? prev.filter(item => item !== id)
-                : [...prev, id]
-        )
-    }
+   
+
+   
+
+
 
     // Search and Category Filter
     let filteredProducts = products.filter(product => {
@@ -188,10 +190,15 @@ function AllProducts() {
 
                                     {/* Wishlist Button */}
                                     <button
+                                       
                                         className="btn btn-light rounded-circle position-absolute top-0 end-0 m-2"
-                                        onClick={() => toggleWishlist(product.id)}
-                                    >
-                                        <i className={`bi ${wishlist.includes(product.id)? 'bi-heart-fill text-danger'
+  onClick={() => {
+    dispatch(addToWishlist(product))
+    alert("Product dispatched to wishlist")
+  }}
+                                    
+                                     >
+                                        <i className={`bi ${wishlist.some(item => item.id === product.id)? 'bi-heart-fill text-danger'
                                                 : 'bi-heart'
                                         }`}></i>
                                     </button>

@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import rewearlogo from "../assets/rewear-logo.png"
 
 
@@ -9,46 +9,57 @@ function Header() {
 
   return (
 
-    <nav className="navbar navbar-dark shadow"
+    <nav className="navbar navbar-dark shadow sticky-top py-3"
       style={{ backgroundColor: "#2d5330" }}>
 
       <div className="container-fluid px-4 d-flex flex-wrap align-items-center">
 
         {/* Logo */}
-       <a className="navbar-brand me-4" href="/">
-  <img
-    src={rewearlogo}
-    alt="ReWear Logo"
-    style={{ width: "170px", height: "auto" }}
-  />
-</a>
+        <Link className="navbar-brand me-4" to="/">
+          <img
+            src={rewearlogo}
+            alt="ReWear Logo"
+            style={{ width: "170px", height: "auto" }}
+          />
+        </Link>
 
         {/* Navigation Links */}
         <ul className="navbar-nav flex-row align-items-center gap-3 mx-auto">
 
           <li className="nav-item">
-            <a className="nav-link active rounded px-3"
-              href="/"
+            <Link className="nav-link active rounded px-3"
+              to="/"
               style={{ backgroundColor: "#087c42" }}>
               <i className="bi bi-house-fill me-2"></i>
               Home
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link px-3" href="/seller">
+            <Link className="nav-link px-3" to="/seller">
               <i className="bi bi-tag-fill me-2"></i>
               Sell Clothes
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link px-3" href="/my-ads">
+            <Link className="nav-link px-3" to="/my-ads">
               <i className="bi bi-briefcase-fill me-2"></i>
               My Ads
-            </a>
+            </Link>
           </li>
+             
+                <div className="d-flex align-items-center">
+                    <input
+                            type="text"
+                            className="form-control me-2"
+                            placeholder="Search clothes..."
+                         />
 
+                 <button className="btn btn-success">
+                  <i className="bi bi-search"></i>
+                  </button>
+                  </div>
         </ul>
 
         {/* Profile Dropdown */}
@@ -68,29 +79,27 @@ function Header() {
             <ul className="dropdown-menu dropdown-menu-end show mt-2 shadow"
               style={{ position: "absolute", right: 0, minWidth: "160px" }}>
 
-                    
-
               <li>
-                <a className="dropdown-item" href="/profile">
+                <Link className="dropdown-item" to="/profile">
                   <i className="bi bi-person-fill me-2"></i>
                   My Profile
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a className="dropdown-item" href="/wishlist">
+                <Link className="dropdown-item" to="/wishlist">
                   <i className="bi bi-heart-fill me-2"></i>
                   My Wishlist
-                </a>
+                </Link>
               </li>
 
               
 
               <li>
-                <a className="dropdown-item" href="/cart">
+                <Link className="dropdown-item" to="/cart">
                   <i className="bi bi-cart-fill me-2"></i>
                   My Cart
-                </a>
+                </Link>
               </li>
 
               <li><hr className="dropdown-divider" /></li>
@@ -108,7 +117,8 @@ function Header() {
 
             </ul>
 
-          )}
+          )
+          }
 
         </div>
 
