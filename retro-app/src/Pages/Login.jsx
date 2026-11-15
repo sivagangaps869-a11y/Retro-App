@@ -62,7 +62,7 @@ function Login() {
 
                
 
-                <button className="btn btn-primary" disabled={loading}>
+                <button className="btn btn-success" disabled={loading}>
                     {loading ? "Logging in..." : "Login"}
                 </button>
 
