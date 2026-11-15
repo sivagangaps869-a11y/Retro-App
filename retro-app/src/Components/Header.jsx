@@ -47,20 +47,18 @@ function Header() {
               My Ads
             </Link>
           </li>
+             
+                <div className="d-flex align-items-center">
+                    <input
+                            type="text"
+                            className="form-control me-2"
+                            placeholder="Search clothes..."
+                         />
 
-          {/* Search */}
-          <div className="d-flex align-items-center">
-            <input
-              type="text"
-              className="form-control me-2"
-              placeholder="Search clothes..."
-            />
-
-            <button className="btn btn-success">
-              <i className="bi bi-search"></i>
-            </button>
-          </div>
-
+                 <button className="btn btn-success">
+                  <i className="bi bi-search"></i>
+                  </button>
+                  </div>
         </ul>
 
         {/* Profile Dropdown */}

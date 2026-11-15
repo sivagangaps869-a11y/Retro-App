@@ -4,7 +4,9 @@
       "name": "siva",
       "email": "siva@gmail.com",
       "password": "741",
-      "id": "1"
+      "id": "1",
+      "phone": "",
+      "address": ""
     },
     {
       "name": "sreya",
@@ -229,6 +231,6 @@
     }
   ],
   "wishlist": [],
-  "cart": [],
-  "$schema": "./node_modules/json-server/schema.json"
+  "cart": []
+  
 }
