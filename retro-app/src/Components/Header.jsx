@@ -8,7 +8,7 @@ function Header() {
 
   return (
 
-    <nav className="navbar navbar-dark shadow"
+    <nav className="navbar navbar-dark shadow sticky-top py-3"
       style={{ backgroundColor: "#2d5330" }}>
 
       <div className="container-fluid px-4 d-flex flex-wrap align-items-center">
@@ -47,7 +47,18 @@ function Header() {
               My Ads
             </a>
           </li>
+             
+                <div className="d-flex align-items-center">
+                    <input
+                            type="text"
+                            className="form-control me-2"
+                            placeholder="Search clothes..."
+                         />
 
+                 <button className="btn btn-success">
+                  <i className="bi bi-search"></i>
+                  </button>
+                  </div>
         </ul>
 
         {/* Profile Dropdown */}

@@ -33,18 +33,6 @@
   ],
   "products": [
     {
-      "productName": "",
-      "description": "",
-      "price": "",
-      "category": "",
-      "size": "",
-      "condition": "",
-      "material": "",
-      "originalPrice": "",
-      "images": [],
-      "id": "1"
-    },
-    {
       "productName": "Shirt",
       "description": "Nil",
       "price": "400",
@@ -226,9 +214,28 @@
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794576470/ot15mgapjc2odkype76s.jpg"
       ],
       "id": "wm0cXBWAOck"
+    },
+    {
+      "productName": "test",
+      "description": "testing id",
+      "price": "700",
+      "category": "footwear",
+      "size": "L",
+      "condition": "Good",
+      "material": "linen",
+      "originalPrice": "750",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794585252/qmv5xhw0tp95rgbv0clc.jpg"
+      ],
+      "id": "TsBUon-t9TA"
     }
   ],
   "wishlist": [],
+<<<<<<< HEAD
   "cart": []
   
+=======
+  "cart": [],
+  "$schema": "./node_modules/json-server/schema.json"
+>>>>>>> main
 }
