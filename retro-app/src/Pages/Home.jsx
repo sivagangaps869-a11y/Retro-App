@@ -7,6 +7,8 @@ import heroImage from '../assets/hero.png'
 import menImage from '../assets/men.jpg'
 import womenImage from '../assets/women.jpg'
 import kidsImage from '../assets/kids.jpg'
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <>
@@ -27,7 +29,7 @@ function Home() {
             <p className='fs-5 mt-3' >Discover affordable pre-loved fashion.Buy and sell clothes while making
               a positive difference to our planet.
             </p>
-            <a href="/products" className='btn btn-success btn-lg mt-3 px-4'>Shop Now</a>
+            <Link to="/allproduct" className='btn btn-success btn-lg mt-3 px-4'>Shop Now</Link>
 
         </div>
         </section>
@@ -149,12 +151,12 @@ function Home() {
 
           <div className="card-body d-flex justify-content-between align-items-center p-4">
             <h4 className="fw-bold mb-0">Men</h4>
-            <a
-              href="/products?category=men"
+            <Link
+              to="allproduct?category=men"
               className="text-success fw-semibold text-decoration-none"
             >
               Explore Collection →
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -176,12 +178,12 @@ function Home() {
 
           <div className="card-body d-flex justify-content-between align-items-center p-4">
             <h4 className="fw-bold mb-0">Women</h4>
-            <a
-              href="/products?category=women"
+            <Link
+              to="/allproduct?category=women"
               className="text-success fw-semibold text-decoration-none"
             >
               Explore Collection →
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -203,12 +205,12 @@ function Home() {
 
           <div className="card-body d-flex justify-content-between align-items-center p-4">
             <h4 className="fw-bold mb-0">Kids</h4>
-            <a
-              href="/products?category=kids"
+            <Link
+              to="/allproduct?category=kids"
               className="text-success fw-semibold text-decoration-none"
             >
               Explore Collection →
-            </a>
+            </Link>
           </div>
 
         </div>
