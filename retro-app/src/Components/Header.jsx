@@ -50,6 +50,7 @@ function Header() {
           </li>
              
                 <div className="d-flex align-items-center">
+                  <Link to={'/login'} className="btn btn-success me-2 ">Login</Link>
                     <input
                             type="text"
                             className="form-control me-2"

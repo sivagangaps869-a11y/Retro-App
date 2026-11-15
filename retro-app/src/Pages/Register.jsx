@@ -74,7 +74,7 @@ function Register() {
 
                 
 
-                <button className="btn btn-primary" disabled={loading}>
+                <button className="btn btn-success" disabled={loading}>
                     {loading ? "Registering..." : "Register"}
                 </button>
 
