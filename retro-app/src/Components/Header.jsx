@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import rewearlogo from "../assets/rewear-logo.png"
 
+
 function Header() {
 
   const [showProfile, setShowProfile] = useState(false)
@@ -82,6 +83,8 @@ function Header() {
                   My Wishlist
                 </a>
               </li>
+
+              
 
               <li>
                 <a className="dropdown-item" href="/cart">
