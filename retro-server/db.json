@@ -228,9 +228,22 @@
         "https://res.cloudinary.com/xb3llsfm/image/upload/v1794585252/qmv5xhw0tp95rgbv0clc.jpg"
       ],
       "id": "TsBUon-t9TA"
+    },
+    {
+      "productName": "T-shirt",
+      "description": "nil",
+      "price": "500",
+      "category": "mens-clothing",
+      "size": "L",
+      "condition": "New",
+      "material": "cotton",
+      "originalPrice": "600",
+      "images": [
+        "https://res.cloudinary.com/xb3llsfm/image/upload/v1794726013/syil6vdir410bfujwdcl.jpg"
+      ],
+      "id": "AjApu3n"
     }
   ],
   "wishlist": [],
   "cart": []
-  
 }

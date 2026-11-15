@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getAllProductsAPI } from '../Services/allAPI'
 import { setProducts } from '../Redux/Slice/productSlice'
 import { addToWishlist, removeFromWishlist } from '../Redux/Slice/wishlistSlice'
+import { Link } from 'react-router-dom'
 
 function AllProducts() {
 
@@ -229,8 +230,12 @@ console.log("Current Wishlist:", wishlist)
                                     </div>
 
                                     <small className="text-muted d-block mt-2">Size: {product.size}</small>
-
-                                    <button className="btn btn-dark w-100 mt-3">View Product</button>
+                                    <Link
+    to={`/view/${product.id}`}
+    className="btn btn-dark w-100 mt-3"
+>
+    View Product
+</Link>
                                 </div>
                             </div>
                         </div>

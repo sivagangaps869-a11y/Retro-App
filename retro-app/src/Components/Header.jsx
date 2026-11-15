@@ -36,14 +36,14 @@ function Header() {
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link px-3" to="/seller">
+            <Link className="nav-link px-3" to="/addproducts">
               <i className="bi bi-tag-fill me-2"></i>
               Sell Clothes
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link px-3" to="/my-ads">
+            <Link className="nav-link px-3" to="/allproduct">
               <i className="bi bi-briefcase-fill me-2"></i>
               My Ads
             </Link>
@@ -80,7 +80,7 @@ function Header() {
               style={{ position: "absolute", right: 0, minWidth: "160px" }}>
 
               <li>
-                <Link className="dropdown-item" to="/profile">
+                <Link className="dropdown-item" to="/myprofile">
                   <i className="bi bi-person-fill me-2"></i>
                   My Profile
                 </Link>
