@@ -31,7 +31,7 @@ function Login() {
     };
 
     return (
-        <div className="container my-5 text-center">
+    <div className="container my-5 text-center" style={{minHeight: '450px'}}>
             <h2>Login</h2>
 
             <form onSubmit={handleLogin}>

@@ -11,35 +11,25 @@ function Cart() {
   const dispatch = useDispatch()
 
   // Calculate total price
-  const total = cart.reduce(
-    (sum, product) => sum + Number(product.price),
-    0
-  )
+  const total = cart.reduce((sum, product) => sum + Number(product.price), 0)
 
   return (
 
     <div style={{ background: '#f5f6f5', minHeight: '100vh' }}>
-
       <div className="container py-4">
-
         <h2 className="fw-bold mb-2" style={{ color: '#315c43' }}>
           My Cart
         </h2>
-
         <p className="text-secondary mb-4">
           Your selected pre-loved finds.
         </p>
 
         <Row>
-
           {cart.length > 0 ? (
-
-            <>
+            <div>
               {cart.map(product => (
-
                 <Col lg={3} md={4} sm={6} xs={12}
                   className="mb-4" key={product.id}>
-
                   <Card className="h-100 border-0 shadow-sm"
                     style={{
                       borderRadius: '12px',
@@ -57,11 +47,9 @@ function Cart() {
                     </Link>
 
                     <Card.Body>
-
                       <Card.Title style={{ color: '#315c43' }}>
                         {product.productName}
                       </Card.Title>
-
                       <h5 className="fw-bold">
                         ₹{product.price}
                       </h5>
@@ -70,16 +58,9 @@ function Cart() {
                         Size: {product.size}
                       </p>
 
-                      <Button
-                        variant="danger"
-                        className="w-100"
-                        onClick={() =>
-                          dispatch(removeFromCart(product.id))
-                        }
-                      >
+                      <Button variant="danger" className="w-100" onClick={() => dispatch(removeFromCart(product.id))}>
                         Remove from Cart
                       </Button>
-
                     </Card.Body>
 
                   </Card>
@@ -91,53 +72,39 @@ function Cart() {
               <Col xs={12}>
                 <Card className="border-0 shadow-sm p-3"
                   style={{ borderRadius: '12px' }}>
-
                   <h4 style={{ color: '#315c43' }}>
                     Cart Summary
                   </h4>
-
                   <p>
                     Total Products: {cart.length}
                   </p>
-
                   <h5 className="fw-bold">
                     Total Amount: ₹{total.toLocaleString('en-IN')}
                   </h5>
-
-                  <Button
-                    className="border-0 mt-2"
-                    style={{ background: '#315c43' }}
-                    onClick={() => alert("Checkout functionality coming soon!")}
-                  >
+                  <Button className="border-0 mt-2" style={{ background: '#315c43' }} onClick={() => alert("Checkout successfull")}>
                     Proceed to Checkout
                   </Button>
-
                 </Card>
               </Col>
-            </>
+            </div>
 
           ) : (
 
             <div className="text-center py-5">
-
               <i className="fa-solid fa-cart-shopping fa-3x mb-3"
                 style={{ color: '#315c43' }}>
               </i>
-
               <h4 style={{ color: '#315c43' }}>
                 Your Cart is Empty
               </h4>
-
               <p className="text-secondary">
                 You haven't added any products yet.
               </p>
-
               <Link to="/allproduct"
                 className="btn text-white"
                 style={{ background: '#315c43' }}>
                 Continue Shopping
               </Link>
-
             </div>
 
           )}

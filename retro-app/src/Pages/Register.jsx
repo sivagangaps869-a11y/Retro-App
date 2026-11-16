@@ -32,7 +32,7 @@ function Register() {
     };
 
     return (
-        <div className="container my-5 text-center ">
+        <div className="container my-5 text-center " style={{minHeight: '450px'}}>
             <h2>Register</h2>
 
             <form onSubmit={handleRegister}>
